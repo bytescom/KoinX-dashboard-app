@@ -27,7 +27,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="h-full w-full bg-white p-6 rounded-lg">
+    <section className="h-full w-full bg-white p-4 sm:p-6 rounded-lg">
       <div className="max-w-5xl mx-auto">
         {/* Section Heading */}
         <h2 className="text-2xl font-bold">Team</h2>
@@ -40,7 +40,7 @@ const Team = () => {
         {/* Team Members */}
         <div className="mt-8 space-y-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-blue-100 p-6 shadow-md rounded-lg flex flex-col sm:flex-row items-center gap-6">
+            <div key={index} className="bg-blue-100 p-4 sm:p-6 shadow-md rounded-lg flex flex-col sm:flex-row sm:justify-center items-center gap-1 sm:gap-6">
               <div className="flex flex-col items-center">
                 <img
                   src={member.image}
@@ -49,8 +49,8 @@ const Team = () => {
                 <p className="text-sm font-semibold">{member.name}</p>
                 <p className="text-gray-500 text-xs">{member.designation}</p>
               </div>
-              <div className="w-[85%]">
-                <p className="text-gray-600 mt-4">{member.description}</p>
+              <div className="sm:w-[85%]">
+                <p className="text-gray-600 text-sm sm:text-base mt-4">{member.description}</p>
               </div>
             </div>
           ))}

@@ -3,9 +3,7 @@ import React from "react";
 // Reusable Card for Key Events
 const KeyEventCard = ({ icon, title, description, bgColor }) => {
   return (
-    <div
-      className={`p-4 rounded-lg flex gap-4 items-start shadow-sm ${bgColor}`}
-    >
+    <div className={`p-4 rounded-lg flex gap-4 items-start shadow-sm ${bgColor}`}>
       {/* Icon */}
       <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow">
         <img src={icon} alt="Event Icon" className="w-6 h-6" />
@@ -40,7 +38,7 @@ const AnalystBar = ({ label, percentage, color }) => {
 
 const Sentiment = () => {
   return (
-    <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+    <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-md">
       {/* Sentiment Title */}
       <h2 className="text-2xl font-semibold mb-4">Sentiment</h2>
 
@@ -51,7 +49,7 @@ const Sentiment = () => {
           <span className="text-gray-400 text-sm"></span>
         </h3>
         <div className="grid grid-cols-1 overflow-clip md:grid-cols-2 gap-4">
-          <KeyEventCard
+          <KeyEventCard 
             icon="https://via.placeholder.com/32" // Replace with icon URL
             title="lorem23 Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis."
             description="Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis. Amet sapien quam viverra adipiscing condimentum. Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis. Amet sapien quam viverra adipiscing condimentum"

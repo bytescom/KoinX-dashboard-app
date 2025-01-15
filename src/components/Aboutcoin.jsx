@@ -14,7 +14,7 @@ const Aboutcoin = () => {
 
   return (
     <div>
-      <div className="h-full w-full p-6 bg-white shadow-md rounded-lg">
+      <div className="h-full w-full p-4 sm:p-6 bg-white shadow-md rounded-lg">
         <div className="pb-6 border-b">
           <h1 className="text-2xl font-bold">About Bitcoin</h1>
           {bitcoinData ? (
@@ -40,7 +40,7 @@ const Aboutcoin = () => {
           </p>
         </div>
 
-        <div className="py-6 border-b">
+        <div className="pt-6 md:py-6 md:border-b">
           <h2 className="text-xl font-semibold">Already Holding Bitcoin?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-blue-100 rounded-lg text-center shadow">
@@ -57,7 +57,7 @@ const Aboutcoin = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="md:block hidden">
           <p className="mt-4 text-gray-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae cupiditate velit voluptatem dolores, nemo autem ducimus, modi ea nobis dignissimos sunt quo iusto ratione, sequi deleniti delectus porro maiores rerum molestias illum ad fuga quis. Beatae voluptatem voluptatum facilis quos laborum officiis nesciunt recusandae?</p>
         </div>
